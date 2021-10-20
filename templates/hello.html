@@ -4,8 +4,11 @@
         <title>Hello Page</title>
     </head>
     <body>
-        
-        <p>Replace this with the hello page logic.</p>
+        {% if name %} 
+        <p> Hello, {{ name }}! </p>
+        {% else %} 
+        <p>  Hello, World!  </p>
+        {% endif %} 
 
     </body>
 </html>

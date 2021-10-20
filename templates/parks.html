@@ -4,8 +4,11 @@
         <title>Parks Page</title>
     </head>
     <body>
-        
-        <p>Replace this with the park page logic.</p>
+        {% for park in parks %}
+        <p> Park: {{park.name}} </p>
+        <p> Location: {{park.loc}} </p>
+        <p> Description: {{park.desc}} </p>
+        {% endfor %}
         
     </body>
 </html>
